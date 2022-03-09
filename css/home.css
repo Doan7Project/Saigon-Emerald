@@ -102,15 +102,14 @@
 /* controduction erea */
 
 .text-introduction {
-    padding: 50px;
+    padding: 30px;
 }
 
 .text-introduction p {
     text-align: justify;
     font-size: 18px;
     font-weight: lighter;
-    font-style: oblique;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .content-introduct {
@@ -127,6 +126,10 @@
     color: rgba(10, 10, 10);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-bottom: 1px solid rgb(146, 146, 146);
+}
+
+.intro-child h4 {
+    font-size: 18px;
 }
 
 
@@ -207,6 +210,9 @@
         height: 450px;
         box-shadow: 2px 0px 4px black;
     }
+    .text-introduction p {
+        font-size: 15px;
+    }
 }
 
 @media only screen and (max-width: 950px) {
@@ -226,6 +232,9 @@
         font-size: 35px;
         font-weight: lighter;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .text-introduction p {
+        font-size: 13px;
     }
     .slider {
         background-color: rgba(15, 15, 15);
@@ -263,13 +272,16 @@
         padding: 20px;
     }
     .content-name {
-        width: 90%;
+        width: 95%;
         margin: auto;
         text-align: center;
         padding: 20px 0px;
     }
     .content-name span {
         font-size: 25px;
+    }
+    .text-introduction p {
+        font-size: 12px;
     }
     .slider {
         background-color: rgba(15, 15, 15);
@@ -281,7 +293,7 @@
     }
     .slides {
         width: 500%;
-        height: 250px;
+        height: 2050px;
         display: flex;
     }
     .slide {
@@ -306,10 +318,28 @@
     }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 414px) {
     .content-intro-detail {
         display: grid;
         grid-template-columns: repeat(auto-fit, 350px);
         justify-content: center;
+    }
+    .content-introduct span {
+        font-size: 13px;
+        font-weight: lighter;
+        color: rgb(36, 36, 36);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .content-name span {
+        font-size: 20px;
+    }
+    .text-introduction p {
+        font-size: 11px;
+    }
+    .intro-child h4 {
+        font-size: 11px;
+    }
+    .intro-child p {
+        font-size: 9px;
     }
 }

@@ -1,232 +1,252 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
 @font-face {
-  font-family: myFirstFont;
-  src: url(sansation_bold.woff);
-  font-weight: bold;
-  font-family: myFirstFont;
+    font-family: myFirstFont;
+    src: url(sansation_bold.woff);
+    font-weight: bold;
+    font-family: myFirstFont;
 }
+
+
 /* Vùng logo  */
 
 .logo img {
-  width: 100px;
+    width: 100px;
 }
+
+
 /* Hết vùng Logo */
+
+
 /* Định dạng vung menubar */
+
 .main-menubar {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  align-items: center;
-  padding: 30px;
-  width: 90%;
-  margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    padding: 30px;
+    width: 90%;
+    margin: 0 auto;
 }
+
+
 /* Định dang menubar */
+
 .menubars ul {
-  display: flex;
+    display: flex;
 }
+
 .menubars ul li {
-  list-style: none;
+    list-style: none;
 }
+
 .menubars ul li a {
-  text-decoration: none;
-  display: block;
-  padding: 5px 20px;
-  font-size: 17px;
-  color: rgb(64, 107, 0, 0.4);
-  font-weight: lighter;
-  transition: all ease 0.4s;
+    text-decoration: none;
+    display: block;
+    padding: 5px 20px;
+    font-size: 17px;
+    color: rgb(64, 107, 0, 0.4);
+    font-weight: lighter;
+    transition: all ease 0.4s;
 }
+
 .menubars ul li a:hover {
-  color: rgb(77, 121, 11);
+    color: rgb(77, 121, 11);
 }
+
+
 /* Định dạng dropdow list button */
+
 .dropbtn {
-  background-color: transparent;
-  color: rgb(64, 107, 0, 0.4);
-  padding: 5px 20px;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-  transition: all ease 0.4s;
+    background-color: transparent;
+    color: rgb(64, 107, 0, 0.4);
+    padding: 5px 20px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    transition: all ease 0.4s;
 }
+
 .dropbtn:hover {
-  color: rgb(77, 121, 11);
+    color: rgb(77, 121, 11);
 }
 
 .dropdown {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
+
 .dropbtn i {
-  font-weight: lighter;
-  padding-left: 5px;
+    font-weight: lighter;
+    padding-left: 5px;
 }
+
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 220px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 220px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
 .dropdown a:hover {
-  background-color: #ddd;
+    background-color: #ddd;
 }
 
 .show {
-  display: block;
+    display: block;
 }
+
+
 /* chức năng chuyển đổi ngôn ngư */
+
 .languge ul {
-  display: flex;
+    display: flex;
 }
+
 .languge ul li {
-  list-style: none;
+    list-style: none;
 }
+
 .languge ul li a {
-  text-decoration: none;
-  display: block;
-  padding: 5px 5px;
-  font-size: 17px;
-  color: rgba(26, 26, 26, 0.4);
-  font-weight: lighter;
-  transition: all ease 0.4s;
-}
-.languge ul li a:hover {
-  color: rgb(0, 0, 0);
-}
-@media only screen and (min-width: 1000px){
-#main{
-    display: none;
-}
-#mySidebar{
-    display: none;
-}
-}
-/* Responsive menubar */
-@media only screen and (max-width: 1000px) {
-  /* hide menubar */
-  .main-menubar {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    text-align: center;
-    padding: 30px;
-  }
-  .menubars {
-    display: none;
-  }
-  .languge {
-    display: none;
-  }
-  .dropdown {
-         position: relative;
-    display: inline-block;
-    
-  }
-  /* menu list loại phòng */
-  .drop-menu{
-    padding: 0px 30px;
-  }
-  .drop-menu button{
-      background-color: transparent;
-      border: none;
-      font-size: 18px;
-     color: #636363;
-    
-  }
-  .drop-menu button:hover{
-    color: #f1f1f1;
-    font-weight: lighter;
-  }
-  .drop-menu button i{
-    padding: 5px;
-  }
-  .drop-menu:hover .menu-list{
-      display: block;
-      transition: all ease 0.4s;
-  }
-  .menu-list{
-      display: none;
-      transition: all ease 0.4s;
-  }
-/* Bảng Hiện menu */
-
-  .sidebar {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(29, 29, 29);
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-
-  .sidebar a {
-    padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 18px;
-    color: #636363;
     display: block;
-    transition: all ease 0.3s;
-  }
-
-  .sidebar a:hover {
-    color: #f1f1f1;
-  }
-
-  .sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-
-  .openbtn {
-    font-size: 18px;
-    cursor: pointer;
-    color: rgb(94, 94, 94);
-    padding: 10px 15px;
-    border: none;
-    background-color: rgb(27, 27, 27);
+    padding: 5px 5px;
+    font-size: 17px;
+    color: rgba(26, 26, 26, 0.4);
+    font-weight: lighter;
     transition: all ease 0.4s;
-    
-  }
-  .openbtn:hover{
-      color: rgb(255, 255, 255);
-      transition: all ease 0.4s;
-  }
+}
 
-  .openbtn:hover {
-    background-color: #444;
-  }
+.languge ul li a:hover {
+    color: rgb(0, 0, 0);
+}
 
-  #main {
-    transition: margin-left 0.5s;
-    background-color: #111;
-    width: 100%;
-    text-align: right;
-    transition: all ease 0.4s;
-  }
-  .showup{
-    display: block;
-  }
+@media only screen and (min-width: 1000px) {
+    #main {
+        display: none;
+    }
+    #mySidebar {
+        display: none;
+    }
+}
+
+
+/* Responsive menubar */
+
+@media only screen and (max-width: 1000px) {
+    /* hide menubar */
+    .main-menubar {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+    }
+    .menubars {
+        display: none;
+    }
+    .languge {
+        display: none;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    /* menu list loại phòng */
+    .drop-menu {
+        padding: 0px 30px;
+    }
+    .drop-menu button {
+        background-color: transparent;
+        border: none;
+        font-size: 18px;
+        color: #636363;
+    }
+    .drop-menu button:hover {
+        color: #f1f1f1;
+        font-weight: lighter;
+    }
+    .drop-menu button i {
+        padding: 5px;
+    }
+    .drop-menu:hover .menu-list {
+        display: block;
+        transition: all ease 0.4s;
+    }
+    .menu-list {
+        display: none;
+        transition: all ease 0.4s;
+    }
+    /* Bảng Hiện menu */
+    .sidebar {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: -100%;
+        background-color: rgb(29, 29, 29);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    .sidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #636363;
+        display: block;
+        transition: all ease 0.3s;
+    }
+    .sidebar a:hover {
+        color: #f1f1f1;
+    }
+    .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    .openbtn {
+        font-size: 18px;
+        cursor: pointer;
+        color: rgb(94, 94, 94);
+        padding: 10px 15px;
+        border: none;
+        background-color: rgb(27, 27, 27);
+        transition: all ease 0.4s;
+    }
+    .openbtn:hover {
+        color: rgb(255, 255, 255);
+        transition: all ease 0.4s;
+    }
+    .openbtn:hover {
+        background-color: #444;
+    }
+    #main {
+        transition: margin-left 0.5s;
+        background-color: #111;
+        width: 100%;
+        text-align: right;
+        transition: all ease 0.4s;
+    }
+    .showup {
+        display: block;
+    }
 }

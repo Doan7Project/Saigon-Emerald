@@ -295,7 +295,7 @@
     }
     .content-intro-detail {
         display: grid;
-        grid-template-columns: repeat(auto-fit, 420px);
+        grid-template-columns: repeat(auto-fit, 400px);
         justify-content: center;
     }
     .content-introduct span {
@@ -303,5 +303,13 @@
         font-weight: lighter;
         color: rgb(36, 36, 36);
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .content-intro-detail {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 350px);
+        justify-content: center;
     }
 }

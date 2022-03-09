@@ -1,14 +1,9 @@
 /* -----------Create promotion picture--------------- */
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 .main-home {
     padding: 20px 0px;
-    background-color: rgba(160, 160, 160, 0.1);
+    background-color: rgba(255, 241, 241, 0.1);
+    border: 1px solid rgb(247, 247, 247);
 }
 
 
@@ -16,13 +11,18 @@
 
 .content-name {
     width: 80%;
-    font-size: 25px;
     margin: auto;
-    text-align: left;
-    color: rgba(99, 99, 99, 0.5);
+    text-align: center;
     padding: 20px 0px;
+}
+
+.content-name span {
+    padding-left: 5px;
+    color: rgb(77, 77, 77);
+    border-left: 1px solid rgba(65, 66, 65, 0.2);
+    font-size: 35px;
+    font-weight: lighter;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-shadow: 2px 2px 4px rgb(179, 179, 179);
 }
 
 
@@ -33,17 +33,16 @@
 }
 
 .slider {
-    box-shadow: 0px 10px 10px rgb(49, 49, 49);
     overflow: hidden;
-    width: 80%;
-    height: 650px;
+    width: 95%;
+    height: 550px;
     margin: 0 auto;
     position: relative;
 }
 
 .slides {
     width: 500%;
-    height: 650px;
+    height: 550px;
     display: flex;
 }
 
@@ -53,8 +52,9 @@
 }
 
 .slide img {
+    justify-items: center;
     width: 100%;
-    height: 650px;
+    height: 550px;
 }
 
 .navigation-manual {
@@ -104,14 +104,17 @@
 .content-introduct {
     width: 100%;
     margin: 50px 0px;
-    background-color: rgb(250, 235, 215, 0.2);
-    font-size: 30px;
-    font-weight: lighter;
     text-align: center;
-    color: rgba(99, 99, 99, 0.5);
-    padding: 20px 0px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-shadow: 2px 2px 4px rgb(179, 179, 179);
+    padding: 50px 0px 0px 0px;
+}
+
+.content-introduct span {
+    font-size: 30px;
+    padding: 0px 0px 10px 0px;
+    font-weight: lighter;
+    color: rgba(10, 10, 10);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 1px solid rgb(146, 146, 146);
 }
 
 
@@ -119,12 +122,30 @@
 
 .content-intro-detail {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 600px);
+    grid-template-columns: repeat(auto-fit, 650px);
     justify-content: center;
 }
 
 .intro {
-    padding: 20px;
+    justify-items: center;
+    text-align: center;
+    margin: 5px;
+    padding: 0px 0px 0px 0px;
+    cursor: pointer;
+    background-color: rgba(255, 238, 238, 0.1);
+    transition: all linear 0.3s;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+.intro:hover {
+    background-color: rgb(111, 171, 250);
+    color: rgb(255, 255, 255);
+    transition: all linear 0.3s;
+}
+
+.intro-child {
+    padding: 20px 10px 0px 10px;
 }
 
 .intro img {
@@ -141,12 +162,16 @@
     .content-name {
         width: 90%;
         margin: auto;
-        font-size: 10px;
         text-align: left;
-        color: rgba(99, 99, 99, 0.5);
         padding: 20px 0px;
+    }
+    .content-name span {
+        padding-left: 5px;
+        color: rgb(77, 77, 77);
+        border-left: 1px solid rgba(65, 66, 65, 0.2);
+        font-size: 35px;
+        font-weight: lighter;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        text-shadow: 2px 2px 4px rgb(179, 179, 179);
     }
     .slider {
         background-color: rgba(15, 15, 15);
@@ -179,12 +204,16 @@
     .content-name {
         width: 90%;
         margin: auto;
-        font-size: 20px;
         text-align: left;
-        color: rgba(99, 99, 99, 0.5);
         padding: 20px 0px;
+    }
+    .content-name span {
+        padding-left: 5px;
+        color: rgb(77, 77, 77);
+        border-left: 1px solid rgba(65, 66, 65, 0.2);
+        font-size: 35px;
+        font-weight: lighter;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        text-shadow: 2px 2px 4px rgb(179, 179, 179);
     }
     .slider {
         background-color: rgba(15, 15, 15);
@@ -208,6 +237,13 @@
         height: 350px;
         box-shadow: 2px 0px 4px black;
     }
+    .content-introduct span {
+        font-size: 25px;
+        font-weight: lighter;
+        color: rgba(10, 10, 10);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border-bottom: 1px solid gainsboro;
+    }
 }
 
 @media only screen and (max-width: 550px) {
@@ -215,14 +251,13 @@
         padding: 20px;
     }
     .content-name {
-        width: 95%;
+        width: 90%;
         margin: auto;
-        font-size: 15px;
         text-align: center;
-        color: rgba(99, 99, 99, 0.5);
         padding: 20px 0px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        text-shadow: 2px 2px 4px rgb(179, 179, 179);
+    }
+    .content-name span {
+        font-size: 25px;
     }
     .slider {
         background-color: rgba(15, 15, 15);
@@ -248,10 +283,13 @@
     }
     .content-intro-detail {
         display: grid;
-        grid-template-columns: repeat(auto-fit, 500px);
+        grid-template-columns: repeat(auto-fit, 420px);
         justify-content: center;
     }
-    .content-introduct {
+    .content-introduct span {
         font-size: 20px;
+        font-weight: lighter;
+        color: rgb(36, 36, 36);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 }

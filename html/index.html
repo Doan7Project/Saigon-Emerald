@@ -13,7 +13,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
-
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/home.css">
 
@@ -30,7 +29,7 @@
         <div class="menubars">
             <ul>
                 <li>
-                    <a href="#">Home</a>
+                    <a href="#!home">Home</a>
                 </li>
                 <li>
                     <a href="#">Gallary</a>
@@ -75,21 +74,26 @@
     <!-- side bar responsive menu -->
     <div class="responsive-table">
         <div id="main">
-            <button class="openbtn" onclick="openNav()"><i class="fas fa-bars"></i></button>
+            <button class="openbtn" onclick="openNav()"><i class="fas
+                        fa-bars"></i></button>
         </div>
         <nav>
             <div id="mySidebar" class="sidebar">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                 <a onclick="home()" href="#!home">Home</a>
                 <div class="drop-menu">
-                    <button class="btn-drop">Our Rooms<i class="far fa-caret-down"></i></button>
+                    <button class="btn-drop">Our Rooms<i class="far
+                                fa-caret-down"></i></button>
                     <div class="menu-list">
-                        <a onclick="supgarden()" id="superior" href="#">Superior Garden View</a>
+                        <a onclick="supgarden()" id="superior" href="#">Superior
+                                Garden View</a>
                         <a onclick="suppool()" href="#">Superior Pool View</a>
                         <a onclick="delgarden()" href="#">Deluxe Garden View</a>
                         <a onclick="delocean()" href="#">Deluxe Ocean View</a>
-                        <a onclick="bunggarden()" href="#">Bungalow Garden View</a>
-                        <a onclick="bungocean()" href="#">Bungalow Ocean View</a>
+                        <a onclick="bunggarden()" href="#">Bungalow Garden
+                                View</a>
+                        <a onclick="bungocean()" href="#">Bungalow Ocean
+                                View</a>
                     </div>
                 </div>
                 <a onclick="service()" href="#">Service & Amenities</a>

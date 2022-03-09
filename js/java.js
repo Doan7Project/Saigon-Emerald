@@ -72,7 +72,7 @@ function closeNav() {
 let app = angular.module("myApp", ["ngRoute"]);
 app.config(function($routeProvider) {
     $routeProvider
-        .when("/", {
+        .when("/home", {
             templateUrl: "home.html"
 
         })
@@ -80,11 +80,11 @@ app.config(function($routeProvider) {
 });
 
 // slides picture code
-// var count = 1;
-// setInterval(function() {
-//     document.getElementById('radio' + count).checked = true;
-//     count++;
-//     if (count > 4) {
-//         count = 1;
-//     }
-// }, 5000);
+var count = 1;
+setInterval(function() {
+    document.getElementById('radio' + count).checked = true;
+    count++;
+    if (count > 4) {
+        count = 1;
+    }
+}, 5000);

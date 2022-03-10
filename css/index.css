@@ -50,13 +50,13 @@
     display: block;
     padding: 5px 20px;
     font-size: 17px;
-    color: rgb(64, 107, 0, 0.4);
+    color: rgb(11, 159, 196, 0.6);
     font-weight: lighter;
     transition: all ease 0.4s;
 }
 
 .menubars ul li a:hover {
-    color: rgb(77, 121, 11);
+    color: rgb(11, 159, 196);
 }
 
 
@@ -64,7 +64,7 @@
 
 .dropbtn {
     background-color: transparent;
-    color: rgb(64, 107, 0, 0.4);
+    color: rgb(11, 159, 196, 0.6);
     padding: 5px 20px;
     font-size: 17px;
     border: none;
@@ -73,7 +73,7 @@
 }
 
 .dropbtn:hover {
-    color: rgb(77, 121, 11);
+    color: rgb(11, 159, 196);
 }
 
 .dropdown {
@@ -135,6 +135,9 @@
 .languge ul li a:hover {
     color: rgb(0, 0, 0);
 }
+
+
+/* mành hinh bung ra tối đa 1820 px */
 
 @media only screen and (min-width: 1820px) {
     .main-menubar {
@@ -210,7 +213,7 @@
         z-index: 1;
         top: 0;
         left: -100%;
-        background-color: rgb(46, 46, 46);
+        background-color: rgb(11, 196, 187);
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
@@ -239,7 +242,7 @@
         color: rgb(94, 94, 94);
         padding: 10px 15px;
         border: none;
-        background-color: rgb(43, 43, 43);
+        background-color: rgb(11, 196, 187);
         transition: all ease 0.4s;
     }
     .openbtn:hover {
@@ -251,7 +254,7 @@
     }
     #main {
         transition: margin-left 0.5s;
-        background-color: rgb(41, 41, 41);
+        background-color: rgb(11, 196, 187);
         width: 100%;
         text-align: right;
         transition: all ease 0.4s;
@@ -259,4 +262,35 @@
     .showup {
         display: block;
     }
+    .ft-body {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 250px);
+        justify-items: center;
+    }
+}
+
+
+/* footer` */
+
+.footer {
+    width: 100%;
+    height: 30vh;
+    background-color: rgb(9, 119, 146);
+    position: relative;
+}
+
+.ft-body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    justify-items: center;
+}
+
+.ft-body div {
+    width: 300px;
+    background-color: #636363;
+}
+
+.footer img {
+    width: 20%;
+    z-index: 0;
 }

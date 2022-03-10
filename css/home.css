@@ -66,12 +66,11 @@
 }
 
 .manual-btn {
-    border: 2px solid rgb(219, 219, 219);
-    padding: 3px;
+    border: 1px solid rgb(219, 219, 219);
+    padding: 4px;
     border-radius: 5px;
     cursor: pointer;
     transition: 1s;
-    z-index: 0;
 }
 
 .manual-btn:not(:last-child) {
@@ -79,7 +78,7 @@
 }
 
 .manual-btn:hover {
-    background-color: rgb(177, 177, 177);
+    background-color: rgb(129, 129, 129);
 }
 
 #radio1:checked~.first {
@@ -96,6 +95,44 @@
 
 #radio4:checked~.first {
     margin-left: -60%;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    top: 90%;
+    justify-content: center;
+    z-index: 0;
+}
+
+.navigation-auto div {
+    border: 1px solid rgb(133, 133, 133);
+    padding: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    z-index: 20;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 30px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background-color: rgb(216, 216, 216);
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+    background-color: rgb(216, 216, 216);
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background-color: rgb(216, 216, 216);
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+    background-color: rgb(216, 216, 216);
 }
 
 
@@ -143,52 +180,20 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.intro-child h4 {
-    font-size: 18px;
-}
 
-.intro-child {
-    padding: 20px 0px;
-}
+/* Slider intro */
 
-.intro img {
+
+/* .intro img {
     width: 100%;
     height: 480px;
     padding: 5px;
     cursor: pointer;
     border-radius: 1em;
-}
-
-.gril-img {
-    justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 750px);
-}
+} */
 
 
 /* hiện thị chữ giữa màn hình */
-
-.name-pic {
-    position: relative;
-    transition: all ease 0.4s;
-}
-
-.content-name-activitie {
-    padding: 20px;
-    height: 150px;
-    text-align: left;
-    cursor: pointer;
-}
-
-.content-name-activitie h4 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
-}
-
-.name-pic:hover .content-name-activitie {
-    color: rgb(13, 173, 173);
-    transition: all ease 0.4s;
-}
 
 @media only screen and (max-width: 1380px) {
     .slider {
@@ -218,11 +223,6 @@
         height: 380px;
         padding: 5px;
         cursor: pointer;
-    }
-    .gril-img {
-        justify-content: center;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, 650px);
     }
 }
 
@@ -312,15 +312,6 @@
     .content-introduct span {
         font-size: 18px;
     }
-    .content-name-activitie h4 {
-        font-size: 16px;
-    }
-    .content-name-activitie p {
-        font-size: 12px;
-    }
-    .content-name-activitie {
-        height: 90px;
-    }
 }
 
 @media only screen and (max-width: 550px) {
@@ -369,27 +360,9 @@
     .content-introduct span {
         font-size: 14px;
     }
-    .intro img {
-        width: 100%;
-        height: 280px;
-    }
-    .content-name-activitie h4 {
-        font-size: 10px;
-    }
-    .content-name-activitie p {
-        font-size: 10px;
-    }
-    .content-name-activitie {
-        height: 85px;
-    }
 }
 
 @media only screen and (max-width: 414px) {
-    /* .content-intro-detail {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, 350px);
-        justify-content: center;
-    } */
     .content-introduct span {
         font-size: 12px;
     }
@@ -405,22 +378,11 @@
     .intro-child p {
         font-size: 9px;
     }
-    .intro img {
-        width: 100%;
-        height: 200px;
-    }
-    .gril-img {
-        justify-content: center;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, 350px);
-    }
-    .content-name-activitie h4 {
-        font-size: 9px;
-    }
-    .content-name-activitie p {
-        font-size: 8px;
-    }
-    .content-name-activitie {
-        height: 85px;
-    }
+}
+
+
+/* bắt đâu định dạng cho intr-slider */
+
+.intr-slider {
+    columns: 2;
 }

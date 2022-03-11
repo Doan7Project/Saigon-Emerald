@@ -103,46 +103,30 @@
                             <h4>WARM SUNSHINE YEAR ROUND WITH MARINE SPORTS AND LOCAL ACTIVITIES</h4>
                             <p>In the beaches of Mui Ne, the atmosphere becomes bustle in early morning to afternoon when tourists take part in marine sports like kite-surfing, wind-surfing, riding canoes, cycling, sand skating... </p>
                         </div>
-
-
                     </div>
                 </div>
             </div>
         </div>
 
 
+        <script>
+            var count = 1;
+            setInterval(function() {
+                document.getElementById('radio' + count).checked = true;
+                count++;
+                if (count > 4) {
+                    count = 1;
+                }
+            }, 5000);
 
-
-
-        <!-- <div class="content-intro-detail">
-            <div class="intro">
-                <div class="ct-introduct">
-                    <div class="content-name-activitie">
-                        <h4 class="cl">BEAUTIFUL ROMANTIC BEACH</h4>
-                        <div class="text-intro">
-                            <p>Beautiful beach gently loping to the sea, gentle breezes, pure sea, blue sky, and cristine reddish sand dunes.</p>
-                        </div>
-                    </div>
-                    <div class="content-name-activitie">
-                        <h4 class="cl">BEAUTIFUL ROMANTIC BEACH</h4>
-                        <div class="text-intro">
-                            <p>Beautiful beach gently loping to the sea, gentle breezes, pure sea, blue sky, and cristine reddish sand dunes.</p>
-                        </div>
-                    </div>
-                    <div class="content-name-activitie">
-                        <h4 class="cl">BEAUTIFUL ROMANTIC BEACH</h4>
-                        <div class="text-intro">
-                            <p>Beautiful beach gently loping to the sea, gentle breezes, pure sea, blue sky, and cristine reddish sand dunes.</p>
-                        </div>
-                    </div>
-
-                </div>
-                <div>
-                    <div class="picts">
-                        <img src="../Image/garden.jpg.crdownload" alt="">
-                    </div>
-                </div>
-            </div>
-        </div> -->
+            var countd = 1;
+            setInterval(function() {
+                document.getElementById('r-radio' + countd).checked = true;
+                countd++;
+                if (countd > 3) {
+                    countd = 1;
+                }
+            }, 3000);
+        </script>
     </div>
 </div>

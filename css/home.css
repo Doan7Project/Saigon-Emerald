@@ -604,11 +604,18 @@
     .r-design-slider {
         padding: 10px 10px;
         width: 100%;
-        height: 280px;
+        height: 500px;
         display: grid;
         grid-template-columns: 1fr;
         position: relative;
         margin-top: 10px;
+    }
+    .r-navigation-auto {
+        width: 100%;
+        position: absolute;
+        justify-content: center;
+        padding: 10px;
+        top: 31%;
     }
     .r-navigation-auto h4 {
         font-size: 10px;

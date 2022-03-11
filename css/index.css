@@ -79,6 +79,7 @@
 .dropdown {
     position: relative;
     display: inline-block;
+    text-align: left;
 }
 
 .dropbtn i {

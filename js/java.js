@@ -88,3 +88,12 @@ setInterval(function() {
         count = 1;
     }
 }, 5000);
+
+var countd = 1;
+setInterval(function() {
+    document.getElementById('r-radio' + countd).checked = true;
+    countd++;
+    if (countd > 3) {
+        countd = 1;
+    }
+}, 3000);

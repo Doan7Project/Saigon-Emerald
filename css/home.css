@@ -184,16 +184,134 @@
 /* Slider intro */
 
 
-/* .intro img {
-    width: 100%;
-    height: 480px;
-    padding: 5px;
-    cursor: pointer;
-    border-radius: 1em;
-} */
-
-
 /* hiện thị chữ giữa màn hình */
+
+
+/* bắt đâu định dạng cho intr-slider */
+
+.r-design-slider {
+    padding: 10px 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    background-color: rgba(255, 248, 240, 0.5);
+    margin-top: 10px;
+}
+
+.r-slides input {
+    display: none;
+}
+
+.r-slider {
+    overflow: hidden;
+    width: 100%;
+    height: 450px;
+    margin: 0 auto;
+}
+
+.r-slides {
+    width: 500%;
+    height: 450px;
+    display: flex;
+}
+
+.r-slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.r-slide img {
+    justify-items: center;
+    width: 100%;
+    height: 450px;
+}
+
+.r-manual-btn {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 4px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#r-radio1:checked~.r-first {
+    margin-left: 0;
+}
+
+#r-radio2:checked~.r-first {
+    margin-left: -20%;
+}
+
+#r-radio3:checked~.r-first {
+    margin-left: -40%;
+}
+
+#r-radio4:checked~.r-first {
+    margin-left: -60%;
+}
+
+.r-navigation-auto {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    justify-content: center;
+    padding: 10px;
+}
+
+.r-navigation-auto h4 {
+    color: cadetblue;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.r-navigation-auto div {
+    border: 1px solid rgb(150, 149, 149);
+    padding: 4px;
+    cursor: pointer;
+    transition: 1s;
+    margin: 10px 0px;
+    z-index: 1;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 2px 4px 10px rgb(115, 115, 121);
+}
+
+.r-auto-btn1 {
+    position: relative;
+}
+
+.r-auto-btn2 {
+    position: relative;
+}
+
+.r-auto-btn3 {
+    position: relative;
+}
+
+#r-radio1:checked~.r-navigation-auto .r-auto-btn1 {
+    border: 1px solid rgb(202, 52, 52);
+    color: brown;
+}
+
+#r-radio2:checked~.r-navigation-auto .r-auto-btn2 {
+    border: 1px solid rgb(202, 52, 52);
+    color: brown;
+}
+
+#r-radio3:checked~.r-navigation-auto .r-auto-btn3 {
+    border: 1px solid rgb(202, 52, 52);
+    color: brown;
+}
+
+#r-radio4:checked~.r-navigation-auto .r-auto-btn4 {
+    border: 1px solid rgb(202, 52, 52);
+    color: brown;
+}
+
+
+/* Kết thúc slide code */
 
 @media only screen and (max-width: 1380px) {
     .slider {
@@ -224,9 +342,25 @@
         padding: 5px;
         cursor: pointer;
     }
+    .r-design-slider {
+        padding: 10px 10px;
+        width: 100%;
+        height: 850px;
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        margin-top: 10px;
+    }
+    .r-navigation-auto {
+        width: 100%;
+        position: absolute;
+        justify-content: center;
+        padding: 10px;
+        top: 55%;
+    }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1200px) {
     .main-home {
         padding: 20px 0px;
     }
@@ -270,6 +404,22 @@
     .content-introduct span {
         font-size: 25px;
     }
+    .r-design-slider {
+        padding: 10px 10px;
+        width: 100%;
+        height: 850px;
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        margin-top: 10px;
+    }
+    .r-navigation-auto {
+        width: 100%;
+        position: absolute;
+        justify-content: center;
+        padding: 10px;
+        top: 55%;
+    }
 }
 
 @media only screen and (max-width: 950px) {
@@ -303,7 +453,6 @@
     .slides {
         width: 500%;
         height: 450px;
-        display: flex;
     }
     .slide {
         width: 20%;
@@ -312,9 +461,30 @@
     .content-introduct span {
         font-size: 18px;
     }
+    .r-slider {
+        overflow: hidden;
+        width: 100%;
+        height: 350px;
+    }
+    .r-slides {
+        height: 450px;
+    }
+    .r-slide img {
+        width: 100%;
+        height: 350px;
+    }
+    .r-design-slider {
+        padding: 10px 10px;
+        width: 100%;
+        height: 650px;
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        margin-top: 10px;
+    }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 520px) {
     .main-home {
         padding: 20px 0px;
     }
@@ -360,6 +530,33 @@
     .content-introduct span {
         font-size: 14px;
     }
+    .r-slider {
+        overflow: hidden;
+        width: 100%;
+        height: 250px;
+    }
+    .r-slides {
+        height: 250px;
+    }
+    .r-slide img {
+        width: 100%;
+        height: 250px;
+    }
+    .r-design-slider {
+        padding: 10px 10px;
+        width: 100%;
+        height: 480px;
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        margin-top: 10px;
+    }
+    .r-navigation-auto h4 {
+        font-size: 13px;
+    }
+    .r-navigation-auto p {
+        font-size: 12px;
+    }
 }
 
 @media only screen and (max-width: 414px) {
@@ -378,11 +575,31 @@
     .intro-child p {
         font-size: 9px;
     }
-}
-
-
-/* bắt đâu định dạng cho intr-slider */
-
-.intr-slider {
-    columns: 2;
+    .r-slider {
+        overflow: hidden;
+        width: 100%;
+        height: 150px;
+    }
+    .r-slides {
+        height: 150px;
+    }
+    .r-slide img {
+        width: 100%;
+        height: 150px;
+    }
+    .r-design-slider {
+        padding: 10px 10px;
+        width: 100%;
+        height: 280px;
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        margin-top: 10px;
+    }
+    .r-navigation-auto h4 {
+        font-size: 10px;
+    }
+    .r-navigation-auto p {
+        font-size: 11px;
+    }
 }

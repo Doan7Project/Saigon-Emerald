@@ -80,3 +80,14 @@ app.config(function($routeProvider) {
 });
 
 // slides picture code
+app.run(function($rootScope, $http) {
+
+    $http.get("../datajson/data.json").then(function(response) {
+        $rootScope.items = response.data.gallery;
+        console.log($rootScope.items);
+    })
+})
+app.controller("homeCtr", function($scope, $rootScope) {
+
+
+});

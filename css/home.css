@@ -188,6 +188,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, 500px);
     justify-content: center;
+    justify-items: center;
 }
 
 .t-img {
@@ -196,21 +197,31 @@
     width: 450px;
     /* margin: 50px; */
     position: relative;
+    cursor: pointer;
 }
 
 .t-content {
     left: 10px;
-    width: 300px;
+    width: 280px;
+    height: 210px;
     top: 0;
     position: absolute;
-    background-color: rgb(255, 255, 255, 0.6);
+    background-color: rgb(255, 255, 255, 0.4);
     box-shadow: 0px 2px 5px rgb(88, 88, 88);
     padding: 20px;
-    height: 250px;
+    transition: all linear 0.3s;
+    color: rgb(34, 36, 36);
+}
+
+.t-img:hover .t-content {
+    left: 0;
+    top: 0;
+    transition: all linear 0.3s;
+    background-color: rgb(255, 255, 255, 0.7);
 }
 
 .t-content h4 {
-    color: rgb(218, 173, 116);
+    color: rgb(247, 183, 100);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -221,8 +232,7 @@
 
 .t-img img {
     width: 100%;
-    box-shadow: 0px 2px 6px rgb(99, 99, 99);
-    border-radius: 1em;
+    box-shadow: 0px 2px 6px rgb(138, 138, 138);
 }
 
 @media only screen and (max-width: 1380px) {
@@ -253,41 +263,6 @@
         height: 380px;
         padding: 5px;
         cursor: pointer;
-    }
-    .r-design-slider {
-        padding: 10px 10px;
-        width: 100%;
-        height: auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        position: relative;
-        margin-top: 10px;
-    }
-    .r-navigation-auto {
-        width: 540px;
-        position: absolute;
-        justify-content: center;
-        padding: 0px 10px;
-        top: 0%;
-        right: 0;
-    }
-    .r-slider {
-        overflow: hidden;
-        width: 100%;
-        height: 350px;
-    }
-    .r-slides {
-        height: 450px;
-    }
-    .r-slide img {
-        width: 100%;
-        height: 350px;
-    }
-    .r-navigation-auto h4 {
-        font-size: 13px;
-    }
-    .r-navigation-auto p {
-        font-size: 12px;
     }
 }
 
@@ -334,34 +309,6 @@
     }
     .content-introduct span {
         font-size: 25px;
-    }
-    .r-design-slider {
-        padding: 10px 10px;
-        width: 100%;
-        height: 760px;
-        display: grid;
-        grid-template-columns: 1fr;
-        position: relative;
-        margin-top: 10px;
-    }
-    .r-navigation-auto {
-        width: 100%;
-        position: absolute;
-        justify-content: center;
-        padding: 10px;
-        top: 60%;
-    }
-    .r-slider {
-        overflow: hidden;
-        width: 100%;
-        height: 450px;
-    }
-    .r-slides {
-        height: 450px;
-    }
-    .r-slide img {
-        width: 100%;
-        height: 450px;
     }
 }
 
@@ -452,39 +399,12 @@
     .content-introduct span {
         font-size: 14px;
     }
-    .r-slider {
-        overflow: hidden;
-        width: 100%;
-        height: 220px;
+    .t-img {
+        width: 400px;
     }
-    .r-slides {
-        height: 220px;
-    }
-    .r-slide img {
-        width: 100%;
-        height: 220px;
-    }
-    .r-design-slider {
-        padding: 10px 10px;
-        width: 100%;
-        height: 630px;
-        display: grid;
-        grid-template-columns: 1fr;
-        position: relative;
-        margin-top: 10px;
-    }
-    .r-navigation-auto {
-        width: 100%;
-        position: absolute;
-        justify-content: center;
-        padding: 10px;
-        top: 40%;
-    }
-    .r-navigation-auto h4 {
-        font-size: 13px;
-    }
-    .r-navigation-auto p {
-        font-size: 12px;
+    .t-content {
+        width: 280px;
+        height: 210px;
     }
 }
 
@@ -503,5 +423,27 @@
     }
     .intro-child p {
         font-size: 9px;
+    }
+    .t-img {
+        width: 300px;
+        padding: 0;
+    }
+    .t-content {
+        width: 100%;
+        height: 100px;
+        left: 0;
+        top: 40%;
+        background-color: rgb(255, 255, 255, 0.2);
+    }
+    .t-content h4 {
+        font-size: 11px;
+    }
+    .t-content p {
+        font-size: 11px;
+    }
+    .t-img:hover .t-content {
+        height: 100%;
+        transition: all linear 0.3s;
+        background-color: rgb(255, 255, 255, 0.7);
     }
 }

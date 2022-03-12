@@ -1,0 +1,18 @@
+{
+    "gallery": [{
+            "id": "A01",
+            "image": "../Image/beach.png"
+
+        },
+        {
+            "id": "A02",
+            "image": "../Image/32134254.jpg"
+        },
+        {
+            "id": "A03",
+            "image": "../Image/32134254.jpg"
+        }
+
+
+    ]
+}

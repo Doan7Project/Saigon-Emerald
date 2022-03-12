@@ -35,14 +35,14 @@
 .slider {
     overflow: hidden;
     width: 100%;
-    height: 750px;
+    height: 677px;
     margin: 0 auto;
     position: relative;
 }
 
 .slides {
     width: 500%;
-    height: 750px;
+    height: 677px;
     display: flex;
 }
 
@@ -54,7 +54,7 @@
 .slide img {
     justify-items: center;
     width: 100%;
-    height: 750px;
+    height: 677px;
 }
 
 .navigation-manual {
@@ -183,10 +183,87 @@
 
 /* chỉnh sửa nội dung giới thiệu */
 
+<<<<<<< HEAD
 .main-content {
     margin: 50px 0px;
     display: grid;
     grid-template-columns: repeat(auto-fit, 500px);
+=======
+
+/* hiện thị chữ giữa màn hình */
+
+
+/* bắt đâu định dạng cho intr-slider */
+
+.r-design-slider {
+    padding: 10px 10px;
+    /* width: 100%x; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    background-color: rgba(255, 248, 240, 0.5);
+    margin-top: 10px;
+}
+
+.r-slides input {
+    display: none;
+}
+
+.r-slider {
+    overflow: hidden;
+    width: 100%;
+    height: 550px;
+    margin: 0 auto;
+}
+
+.r-slides {
+    width: 500%;
+    height: 550px;
+    display: flex;
+}
+
+.r-slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.r-slide img {
+    justify-items: center;
+    width: 100%;
+    height: 550px;
+}
+
+.r-manual-btn {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 4px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#r-radio1:checked~.r-first {
+    margin-left: 0;
+}
+
+#r-radio2:checked~.r-first {
+    margin-left: -20%;
+}
+
+#r-radio3:checked~.r-first {
+    margin-left: -40%;
+}
+
+#r-radio4:checked~.r-first {
+    margin-left: -60%;
+}
+
+.r-navigation-auto {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+>>>>>>> e99d977a9785b86e65fed358a75a888bd12c6081
     justify-content: center;
 }
 
@@ -254,9 +331,47 @@
         padding: 5px;
         cursor: pointer;
     }
+<<<<<<< HEAD
+=======
+    .r-design-slider {
+        padding: 10px 10px;
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+        margin-top: 10px;
+    }
+    .r-navigation-auto {
+        width: 540px;
+        position: absolute;
+        justify-content: center;
+        padding: 0px 10px;
+        top: 0%;
+        right: 0;
+    }
+    .r-slider {
+        overflow: hidden;
+        width: 100%;
+        height: 350px;
+    }
+    .r-slides {
+        height: 450px;
+    }
+    .r-slide img {
+        width: 100%;
+        height: 350px;
+    }
+    .r-navigation-auto h4 {
+        font-size: 13px;
+    }
+    .r-navigation-auto p {
+        font-size: 12px;
+    }
+>>>>>>> e99d977a9785b86e65fed358a75a888bd12c6081
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1250px) {
     .main-home {
         padding: 20px 0px;
     }
@@ -300,6 +415,37 @@
     .content-introduct span {
         font-size: 25px;
     }
+<<<<<<< HEAD
+=======
+    .r-design-slider {
+        padding: 10px 10px;
+        width: 100%;
+        height: 760px;
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        margin-top: 10px;
+    }
+    .r-navigation-auto {
+        width: 100%;
+        position: absolute;
+        justify-content: center;
+        padding: 10px;
+        top: 60%;
+    }
+    .r-slider {
+        overflow: hidden;
+        width: 100%;
+        height: 450px;
+    }
+    .r-slides {
+        height: 450px;
+    }
+    .r-slide img {
+        width: 100%;
+        height: 450px;
+    }
+>>>>>>> e99d977a9785b86e65fed358a75a888bd12c6081
 }
 
 @media only screen and (max-width: 950px) {
@@ -389,6 +535,43 @@
     .content-introduct span {
         font-size: 14px;
     }
+<<<<<<< HEAD
+=======
+    .r-slider {
+        overflow: hidden;
+        width: 100%;
+        height: 220px;
+    }
+    .r-slides {
+        height: 220px;
+    }
+    .r-slide img {
+        width: 100%;
+        height: 220px;
+    }
+    .r-design-slider {
+        padding: 10px 10px;
+        width: 100%;
+        height: 630px;
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        margin-top: 10px;
+    }
+    .r-navigation-auto {
+        width: 100%;
+        position: absolute;
+        justify-content: center;
+        padding: 10px;
+        top: 40%;
+    }
+    .r-navigation-auto h4 {
+        font-size: 13px;
+    }
+    .r-navigation-auto p {
+        font-size: 12px;
+    }
+>>>>>>> e99d977a9785b86e65fed358a75a888bd12c6081
 }
 
 @media only screen and (max-width: 414px) {

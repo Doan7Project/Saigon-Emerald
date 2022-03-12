@@ -79,6 +79,7 @@
 .dropdown {
     position: relative;
     display: inline-block;
+    text-align: left;
 }
 
 .dropbtn i {
@@ -161,7 +162,20 @@
 
 /* Responsive menubar */
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1380px) {
+    .main-menubar {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+    }
+    .logo {
+        padding: 0px 20px;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
     /* hide menubar */
     .main-menubar {
         display: grid;

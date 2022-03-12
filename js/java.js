@@ -80,6 +80,7 @@ app.config(function($routeProvider) {
 });
 
 // slides picture code
+<<<<<<< HEAD
 var count = 1;
 setInterval(function() {
     document.getElementById('radio' + count).checked = true;
@@ -97,3 +98,16 @@ setInterval(function() {
         countd = 1;
     }
 }, 3000);
+=======
+app.run(function($rootScope, $http) {
+
+    $http.get("../datajson/data.json").then(function(response) {
+        $rootScope.items = response.data.gallery;
+        console.log($rootScope.items);
+    })
+})
+app.controller("homeCtr", function($scope, $rootScope) {
+
+
+});
+>>>>>>> e99d977a9785b86e65fed358a75a888bd12c6081

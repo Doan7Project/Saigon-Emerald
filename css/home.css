@@ -482,7 +482,7 @@
                 }
                 .content-room {
                     position: absolute;
-                    width: 40%;
+                    width: 45%;
                     left: 0%;
                     top: -5px;
                     transform: translate(0, 0);
@@ -600,7 +600,7 @@
                     font-size: 12px;
                 }
                 .content-room ul li a {
-                    font-size: 8px;
+                    font-size: 7px;
                     padding: 5px;
                 }
                 .highlight h4 {

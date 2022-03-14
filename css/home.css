@@ -2,7 +2,7 @@
             
             .main-home {
                 padding: 20px 0px;
-                background-color: rgba(255, 241, 241, 0.1);
+                background-color: rgba(255, 241, 241, 0.4);
                 font-family: 'Times New Roman', Times, serif;
             }
             /* name of resort */
@@ -164,12 +164,16 @@
                 position: relative;
             }
             
+            .content-introduct-t {
+                border-top: 1px solid rgb(250, 232, 186);
+                text-align: center;
+                padding: 30px;
+                position: relative;
+            }
+            
             .content-introduct-t span {
-                font-size: 30px;
-                padding: 0px 0px 10px 0px;
                 font-weight: bold;
-                color: rgb(63, 63, 63);
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: rgb(48, 48, 48);
             }
             
             .underline {
@@ -178,33 +182,6 @@
                 height: 1px;
                 position: absolute;
                 bottom: 0;
-            }
-            
-            .content-introduct-t {
-                text-align: center;
-                padding: 0px 0px 10px 0px;
-                position: relative;
-            }
-            
-            .content-sk {
-                width: 45%;
-                margin: auto;
-                background-color: rgb(255, 255, 255);
-            }
-            
-            .underline-t {
-                background-color: rgba(219, 199, 15, 0.3);
-                width: 100%;
-                height: 0.2px;
-                position: absolute;
-                bottom: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                z-index: -1;
-            }
-            
-            .content-sk span {
-                font-size: 18px;
             }
             
             .content-introduct span {
@@ -217,7 +194,7 @@
             /* chỉnh sửa nội dung giới thiệu */
             
             .main-content {
-                margin: 50px 0px;
+                margin: 18px 0px;
                 display: grid;
                 grid-template-columns: repeat(auto-fit, 500px);
                 justify-content: center;
@@ -435,6 +412,9 @@
                 .pic-room img {
                     height: 550px;
                 }
+                .content-introduct-t h4 {
+                    font-size: 17px;
+                }
             }
             
             @media only screen and (max-width: 950px) {
@@ -502,6 +482,9 @@
                 .pic-room img {
                     height: 450px;
                 }
+                .content-introduct-t h4 {
+                    font-size: 15px;
+                }
             }
             
             @media only screen and (max-width: 820px) {
@@ -556,6 +539,9 @@
                 }
                 .pic-room img {
                     height: 350px;
+                }
+                .content-introduct-t h4 {
+                    font-size: 13px;
                 }
             }
             
@@ -633,6 +619,9 @@
                 .pic-room img {
                     height: 250px;
                 }
+                .content-introduct-t h4 {
+                    font-size: 12px;
+                }
             }
             
             @media only screen and (max-width: 414px) {
@@ -642,5 +631,14 @@
                 }
                 .pic-room img {
                     height: 180px;
+                }
+                .content-introduct-t h4 {
+                    font-size: 10px;
+                }
+                .main-content {
+                    margin: 10px 0px;
+                }
+                .highlight {
+                    margin: 10px auto;
                 }
             }

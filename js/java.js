@@ -76,6 +76,10 @@ app.config(function($routeProvider) {
             templateUrl: "home.html"
 
         })
+        .when("/room", {
+            templateUrl: "room.html"
+
+        })
 
 });
 

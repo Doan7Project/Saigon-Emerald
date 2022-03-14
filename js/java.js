@@ -93,33 +93,33 @@ setInterval(function() {
 
 
 function fuctionpic1() {
-    document.getElementById('pic1').style.width = "100%";
-    document.getElementById('pic2').style.width = "0";
-    // document.getElementById('actives').style.background = "red";
-    document.getElementById('pic3').style.width = "0";
-    document.getElementById('pic4').style.width = "0";;
+    document.getElementById('pic1').style.opacity = "1";
+    document.getElementById('pic2').style.opacity = "0";
+
+    document.getElementById('pic3').style.opacity = "0";
+    document.getElementById('pic4').style.opacity = "0";;
 }
 
 function fuctionpic2() {
-    document.getElementById('pic1').style.width = "0";
-    document.getElementById('pic2').style.width = "100%";
-    document.getElementById('pic3').style.width = "0";
-    document.getElementById('pic4').style.width = "0";
+    document.getElementById('pic1').style.opacity = "0";
+    document.getElementById('pic2').style.opacity = "1";
+    document.getElementById('pic3').style.opacity = "0";
+    document.getElementById('pic4').style.opacity = "0";
 
 }
 
 function fuctionpic3() {
-    document.getElementById('pic1').style.width = "0";
-    document.getElementById('pic2').style.width = "0";
-    document.getElementById('pic3').style.width = "100%";
-    document.getElementById('pic4').style.width = "0";
+    document.getElementById('pic1').style.opacity = "0";
+    document.getElementById('pic2').style.opacity = "0";
+    document.getElementById('pic3').style.opacity = "1";
+    document.getElementById('pic4').style.opacity = "0";
 
 }
 
 function fuctionpic4() {
-    document.getElementById('pic1').style.width = "0";
-    document.getElementById('pic2').style.width = "0";
-    document.getElementById('pic3').style.width = "0";
-    document.getElementById('pic4').style.width = "100%";
+    document.getElementById('pic1').style.opacity = "0";
+    document.getElementById('pic2').style.opacity = "0";
+    document.getElementById('pic3').style.opacity = "0";
+    document.getElementById('pic4').style.opacity = "1";
 
 }

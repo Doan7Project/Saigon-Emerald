@@ -24,6 +24,10 @@ function home() {
     document.getElementById("mySidebar").style.left = "-100%";
 }
 
+function rooms() {
+    document.getElementById("mySidebar").style.left = "-100%";
+}
+
 function supgarden() {
     document.getElementById("mySidebar").style.left = "-100%";
 }
@@ -72,6 +76,7 @@ function closeNav() {
 let app = angular.module("myApp", ["ngRoute"]);
 app.config(function($routeProvider) {
     $routeProvider
+
         .when("/", {
             templateUrl: "home.html"
 

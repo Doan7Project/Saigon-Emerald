@@ -195,10 +195,8 @@
             
             .main-content {
                 margin: 18px 0px;
-                width: 80%;
-                margin: auto;
                 display: grid;
-                grid-template-columns: repeat(auto-fit, 500px);
+                grid-template-columns: repeat(auto-fit, 520px);
                 justify-content: center;
                 justify-items: center;
             }

@@ -71,6 +71,60 @@
     transition: all ease 0.3s;
 }
 
+
+/* form đang ký phòng */
+
+.r-form {
+    width: 80%;
+    margin: auto;
+    height: 80vh;
+    background-color: beige;
+    position: relative;
+}
+
+.book-form {
+    position: absolute;
+    left: 50%;
+    width: 900px;
+    top: 10%;
+    align-items: center;
+    background-color: white;
+    transform: translate(-50%, -10%);
+}
+
+.r-accommodation {
+    /* display: grid;
+    grid-template-columns: auto; */
+}
+
+.r-person-info {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.r-person-info div {
+    padding: 10px;
+}
+
+.r-person-info div input {
+    width: 100%;
+    padding: 2px;
+}
+
+.r-person-info-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.r-person-info-2 div {
+    padding: 10px;
+}
+
+.r-person-info-2 div input {
+    width: 100%;
+    padding: 2px;
+}
+
 @media only screen and (max-width: 1480px) {
     .r-rooms {
         display: grid;
@@ -127,11 +181,11 @@
 
 @media only screen and (max-width: 515px) {
     .r-img {
-        width: 280px;
+        width: 250px;
     }
     .r-info {
         height: 300px;
-        width: 280px;
+        width: 250px;
         text-align: left;
     }
     .r-img img {

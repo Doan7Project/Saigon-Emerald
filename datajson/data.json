@@ -1,16 +1,75 @@
 {
-    "gallery": [{
+    "rooms": [{
             "id": "A01",
-            "image": "../Image/beach.png"
-
+            "image": "../Image/broom1.jpg",
+            "name": "Superior Garden View",
+            "qty": 15,
+            "area": "25m2",
+            "view": "Garden View",
+            "extra": "No",
+            "occ": 2,
+            "bath": "shower",
+            "bed": "Double or Tween"
         },
         {
-            "id": "A02",
-            "image": "../Image/32134254.jpg"
+            "id": "A01",
+            "image": "../Image/broom1.jpg",
+            "name": "Superior Pool View",
+            "qty": 15,
+            "area": "25m2",
+            "view": "Garden View",
+            "extra": "No",
+            "occ": 2,
+            "bath": "shower",
+            "bed": "Double or Tween"
         },
         {
-            "id": "A03",
-            "image": "../Image/32134254.jpg"
+            "id": "A01",
+            "image": "../Image/broom1.jpg",
+            "name": "Deluxe Garden View",
+            "qty": 15,
+            "area": "25m2",
+            "view": "Garden View",
+            "extra": "No",
+            "occ": 2,
+            "bath": "shower",
+            "bed": "Double or Tween"
+        },
+        {
+            "id": "A01",
+            "image": "../Image/broom1.jpg",
+            "name": "Deluxe Ocean View",
+            "qty": 15,
+            "area": "25m2",
+            "view": "Garden View",
+            "extra": "No",
+            "occ": 2,
+            "bath": "shower",
+            "bed": "Double or Tween"
+        },
+        {
+            "id": "A01",
+            "image": "../Image/broom1.jpg",
+            "name": "Bungalow Garden View",
+            "qty": 15,
+            "area": "25m2",
+            "view": "Garden View",
+            "extra": "No",
+            "occ": 2,
+            "bath": "shower",
+            "bed": "Double or Tween"
+        },
+        {
+            "id": "A01",
+            "image": "../Image/broom1.jpg",
+            "name": "Bungalow Ocean View",
+            "qty": 15,
+            "area": "25m2",
+            "view": "Garden View",
+            "extra": "No",
+            "occ": 2,
+            "bath": "shower",
+            "bed": "Double or Tween"
         }
 
 

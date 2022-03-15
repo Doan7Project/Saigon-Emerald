@@ -1,15 +1,140 @@
 .main-room {
+    margin: 20px auto;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(255, 247, 241);
+}
+
+.t-room {
     width: 80%;
     margin: auto;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 .main-room img {
     width: 100%;
-    margin: auto;
 }
 
 .r-content {
+    margin: 20px;
     text-align: center;
     padding: 20px;
+}
+
+.r-rooms {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 0px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    border-top: 1px solid rgb(228, 228, 228);
+    padding: 30px 0px;
+}
+
+.r-img {
+    cursor: pointer;
+    width: 800px;
+    margin: auto;
+}
+
+.r-img img {
+    width: 700px;
+}
+
+.r-info {
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    text-align: left;
+}
+
+.r-detail-info {
+    margin: 20px 0px;
+}
+
+.r-detail-info i {
+    padding-right: 10px;
+}
+
+.r-info input {
+    width: 150px;
+    height: 35px;
+    border-radius: 0.5em;
+    background-color: rgb(11, 172, 118, 0.6);
+    border: none;
+    color: rgb(212, 212, 212);
+    transition: all ease 0.3s;
+}
+
+.r-info input:hover {
+    color: white;
+    background-color: rgb(11, 172, 118);
+    transition: all ease 0.3s;
+}
+
+@media only screen and (max-width: 1480px) {
+    .r-rooms {
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+        margin: auto;
+    }
+    .r-info {
+        margin: 10px auto;
+        width: 700px;
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .r-img {
+        width: 500px;
+    }
+    .r-info {
+        width: 500px;
+        text-align: left;
+    }
+    .r-img img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .r-img {
+        width: 500px;
+    }
+    .r-info {
+        width: 500px;
+        text-align: left;
+    }
+    .r-img img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .r-img {
+        width: 400px;
+    }
+    .r-info {
+        height: 300px;
+        width: 400px;
+        text-align: left;
+    }
+    .r-img img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 515px) {
+    .r-img {
+        width: 280px;
+    }
+    .r-info {
+        height: 300px;
+        width: 280px;
+        text-align: left;
+    }
+    .r-img img {
+        width: 100%;
+    }
 }

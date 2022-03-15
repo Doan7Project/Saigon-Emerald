@@ -89,6 +89,20 @@ app.config(function($routeProvider) {
 });
 
 // slides picture code
+// load json data
+app.run(function($rootScope, $http) {
+    $http.get("../datajson/data.json").then(function(response) {
+
+        $rootScope.items = response.data.rooms;
+        console.log($rootScope.items);
+    })
+})
+
+app.controller("roomCtr", function($scope, $rootScope) {
+
+
+});
+// end load
 var count = 1;
 setInterval(function() {
     document.getElementById('radio' + count).checked = true;
@@ -130,5 +144,28 @@ function fuctionpic4() {
     document.getElementById('pic2').style.opacity = "0";
     document.getElementById('pic3').style.opacity = "0";
     document.getElementById('pic4').style.opacity = "1";
+
+}
+
+// top function
+window.onscroll = function() {
+    scrollFunction()
+};
+var mybutton = document.getElementById('topbtn');
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+        mybutton.style.transition = "all linear 0.4s";
+    } else {
+        mybutton.style.display = "none";
+        mybutton.style.transition = "all linear 0.4s";
+    }
+}
+
+function topFunction() {
+
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 
 }

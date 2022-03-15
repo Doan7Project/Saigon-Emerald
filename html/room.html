@@ -1,9 +1,31 @@
-<div class="main-room">
+<div class="main-room" ng-controller="roomCtr">
     <div class="t-room">
         <img src="../Image/room1.jpg" alt=" ">
     </div>
     <div class="r-content">
         <h6>WELCOME TO SAIGON EMERALD RESORT - MADAM CUC</h6>
-        <h4>Make yourself at home in our luxurious Saigon hotel rooms</h4>
+        <h4>Make yourself at home in Saigon Emerald Resort</h4>
+    </div>
+    <div class="r-room">
+        <div class="r-rooms" ng-repeat="room in items">
+            <div class="r-img">
+                <img src="{{room.image}}" alt="">
+            </div>
+            <div class="r-info">
+                <div>
+                    <h3>{{room.name}}</h3>
+                    <h5>{{room.qty}} Rooms</h5>
+                    <div class="r-detail-info">
+                        <h6><i class="fal fa-check"></i>room area: {{room.area}}</h6>
+                        <h6><i class="fal fa-check"></i>View: {{room.view}}</h6>
+                        <h6><i class="fal fa-check"></i>Extra bed: {{room.extra}}</h6>
+                        <h6><i class="fal fa-check"></i>Occupancy: {{room.occ}}</h6>
+                        <H6><i class="fal fa-check"></i>Bathroom: {{room.bath}}</H6>
+                        <h6><i class="fal fa-check"></i>Bed Type: {{room.bed}}</h6>
+                    </div>
+                    <input type="button" value="Book Now">
+                </div>
+            </div>
+        </div>
     </div>
 </div>

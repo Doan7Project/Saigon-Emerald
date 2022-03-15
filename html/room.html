@@ -33,7 +33,7 @@
         <form action="" class="book-form">
             <h3>Make a reservation for the best price</h3>
             <div class="r-all">
-                <h6 for="">Accomodation <span>*</span></h6>
+                <h6 for="">Accomodation <span style="color: rgb(250, 57, 57);">*</span></h6>
                 <select name="" id="" class="r-accommodation">
                     <option value="">Select your accomodation</option>
                     <option value="">Superior Garden View</option>
@@ -43,39 +43,68 @@
                     <option value="">Bungalow Garden View</option>
                     <option value="">Bungalow Ocean View</option>
                 </select>
+                <div class="r-alart">
+                    <h6>This field is required</h6>
+                </div>
             </div>
             <div class="r-person-info">
-                <div>
-                    <h6>Check in</h6>
+                <div class="r-all-info">
+                    <h6>Check in <span style="color: rgb(250, 57, 57);">*</span></h6>
                     <input type="date">
+                    <div class="r-alart">
+                        <h6>This field is required</h6>
+                    </div>
                 </div>
-                <div>
-                    <h6>Check out</h6>
+                <div class="r-all-info">
+                    <h6>Check out <span style="color: rgb(250, 57, 57);">*</span></h6>
                     <input type="date">
+                    <div class="r-alart">
+                        <h6>This field is required</h6>
+                    </div>
                 </div>
-                <div>
-                    <h6>Adults</h6>
+                <div class="r-all-info">
+                    <h6>Adults <span style="color: rgb(250, 57, 57);">*</span></h6>
                     <input type="text">
+                    <div class="r-alart">
+                        <h6>This field is required</h6>
+                    </div>
                 </div>
-                <div>
+                <div class="r-all-info">
                     <h6>Children</h6>
                     <input type="text">
+
                 </div>
 
             </div>
             <div class="r-person-info-2">
-                <div>
-                    <h6>Your Name</h6>
+                <div class="r-all-info">
+                    <h6>Your Name <span style="color: rgb(250, 57, 57);">*</span></h6>
                     <input type="text">
+                    <div class="r-alart">
+                        <h6>This field is required</h6>
+                    </div>
                 </div>
-                <div>
-                    <h6>Phone</h6>
-                    <input type="date">
+                <div class="r-all-info">
+                    <h6>Phone <span style="color: rgb(250, 57, 57);">*</span></h6>
+                    <input type="phone">
+                    <div class="r-alart">
+                        <h6>This field is required</h6>
+                    </div>
                 </div>
-                <div>
-                    <h6>Email</h6>
+                <div class="r-all-info">
+                    <h6>Email <span style="color: rgb(250, 57, 57);">*</span></h6>
                     <input type="text">
+                    <div class="r-alart">
+                        <h6>This field is required</h6>
+                    </div>
                 </div>
+            </div>
+            <div class="r-all">
+                <h6>Your Note</h6>
+                <textarea name="" id=""></textarea>
+            </div>
+            <div class="r-btn-book">
+                <button>Book</button>
             </div>
         </form>
     </div>

@@ -75,9 +75,8 @@
 /* form đang ký phòng */
 
 .r-form {
-    width: 80%;
     margin: auto;
-    height: 80vh;
+    height: 100vh;
     background-color: beige;
     position: relative;
 }
@@ -86,15 +85,16 @@
     position: absolute;
     left: 50%;
     width: 900px;
-    top: 10%;
+    top: 15%;
+    padding: 50px;
     align-items: center;
     background-color: white;
     transform: translate(-50%, -10%);
+    box-shadow: 0px 10px 20px rgb(124, 124, 124);
 }
 
-.r-accommodation {
-    /* display: grid;
-    grid-template-columns: auto; */
+.book-form h3 {
+    padding: 10px;
 }
 
 .r-person-info {
@@ -102,13 +102,29 @@
     grid-template-columns: auto auto auto auto;
 }
 
-.r-person-info div {
+.r-all {
+    padding: 10px;
+}
+
+.r-all select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 0.2em;
+    cursor: pointer;
+}
+
+.r-person-info .r-all-info {
     padding: 10px;
 }
 
 .r-person-info div input {
     width: 100%;
-    padding: 2px;
+    padding: 5px 8px;
+    outline: none;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 0.2em;
+    cursor: pointer;
 }
 
 .r-person-info-2 {
@@ -116,13 +132,58 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.r-person-info-2 div {
+.r-person-info-2 .r-all-info {
     padding: 10px;
 }
 
 .r-person-info-2 div input {
     width: 100%;
-    padding: 2px;
+    padding: 5px 8px;
+    outline: none;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 0.2em;
+    cursor: pointer;
+}
+
+.r-all textarea {
+    width: 100%;
+    min-height: 10vh;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 0.2em;
+    cursor: pointer;
+    outline: none;
+}
+
+.r-alart {
+    padding: 5px 0px;
+}
+
+.r-alart h6 {
+    color: rgb(252, 66, 66);
+    background-color: rgb(248, 110, 110, 0.1);
+    padding: 4px;
+    border-left: 4px solid rgb(252, 66, 66);
+}
+
+.r-btn-book {
+    padding: 10px;
+}
+
+.r-btn-book button {
+    width: 120px;
+    height: 40px;
+    font-weight: bold;
+    color: white;
+    outline: none;
+    background-color: rgba(207, 161, 8, 0.7);
+    border: none;
+    transition: all ease 0.3s;
+    border-radius: 0.2em;
+}
+
+.r-btn-book button:hover {
+    background-color: rgba(207, 161, 8);
+    transition: all ease 0.3s;
 }
 
 @media only screen and (max-width: 1480px) {
@@ -150,9 +211,25 @@
     .r-img img {
         width: 100%;
     }
+    /* responsive form */
+    .r-person-info {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .r-person-info-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .r-form {
+        margin: auto;
+        height: 150vh;
+    }
+    .book-form {
+        width: 700px;
+    }
 }
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 950px) {
     .r-img {
         width: 500px;
     }
@@ -177,6 +254,13 @@
     .r-img img {
         width: 100%;
     }
+    .r-form {
+        margin: auto;
+        height: 170vh;
+    }
+    .book-form {
+        width: 500px;
+    }
 }
 
 @media only screen and (max-width: 515px) {
@@ -190,5 +274,107 @@
     }
     .r-img img {
         width: 100%;
+    }
+    .book-form {
+        width: 400px;
+    }
+    .r-form {
+        margin: auto;
+        /* height: 150vh; */
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .book-form {
+        width: 300px;
+    }
+    .r-form {
+        margin: auto;
+        height: 170vh;
+    }
+    .r-all textarea {
+        width: 100%;
+        font: 10px;
+        min-height: 10vh;
+        border: 1px solid rgb(184, 184, 184);
+        border-radius: 0.2em;
+        cursor: pointer;
+        outline: none;
+    }
+    .r-all select {
+        width: 100%;
+        font-size: 12px;
+        padding: 5px;
+        border: 1px solid rgb(184, 184, 184);
+        border-radius: 0.2em;
+        cursor: pointer;
+    }
+    .r-person-info div input {
+        width: 100%;
+        font-size: 12px;
+        padding: 3px 8px;
+        outline: none;
+        border: 1px solid rgb(184, 184, 184);
+        border-radius: 0.2em;
+        cursor: pointer;
+    }
+    .r-person-info-2 div input {
+        width: 100%;
+        font-size: 12px;
+        padding: 3px 8px;
+        outline: none;
+        border: 1px solid rgb(184, 184, 184);
+        border-radius: 0.2em;
+        cursor: pointer;
+    }
+    .book-form h3 {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .r-form {
+        margin: auto;
+        height: 210vh;
+    }
+    .book-form h3 {
+        font-size: 16px;
+        text-align: center;
+    }
+    .r-all textarea {
+        width: 100%;
+        font: 10px;
+        min-height: 10vh;
+        border: 1px solid rgb(184, 184, 184);
+        border-radius: 0.2em;
+        cursor: pointer;
+        outline: none;
+    }
+    .r-all select {
+        width: 100%;
+        font-size: 12px;
+        padding: 5px;
+        border: 1px solid rgb(184, 184, 184);
+        border-radius: 0.2em;
+        cursor: pointer;
+    }
+    .r-person-info div input {
+        width: 100%;
+        font-size: 12px;
+        padding: 3px 8px;
+        outline: none;
+        border: 1px solid rgb(184, 184, 184);
+        border-radius: 0.2em;
+        cursor: pointer;
+    }
+    .r-person-info-2 div input {
+        width: 100%;
+        font-size: 12px;
+        padding: 3px 8px;
+        outline: none;
+        border: 1px solid rgb(184, 184, 184);
+        border-radius: 0.2em;
+        cursor: pointer;
     }
 }

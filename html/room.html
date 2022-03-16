@@ -1,10 +1,13 @@
 <div class="main-room" ng-controller="roomCtr">
     <div class="t-room">
         <img src="../Image/room1.jpg" alt="">
+        <div class="r-intro">
+            <h4>WELCOME TO SAIGON EMERALD RESORT - MADAM CUC</h4>
+            <h5>Make yourself at home in Saigon Emerald Resort</h5>
+        </div>
     </div>
     <div class="r-content">
-        <h6>WELCOME TO SAIGON EMERALD RESORT - MADAM CUC</h6>
-        <h4>Make yourself at home in Saigon Emerald Resort</h4>
+        <h5>MAKE YOUR PERFECT ACCOMODATION</h5>
     </div>
     <div class="r-room">
         <div class="r-rooms" ng-repeat="room in items">
@@ -13,7 +16,7 @@
             </div>
             <div class="r-info">
                 <div>
-                    <h3>{{room.name}}</h3>
+                    <h4>{{room.name}}</h4>
                     <h5>{{room.qty}} Rooms</h5>
                     <div class="r-detail-info">
                         <h6><i class="fal fa-check"></i>room area: {{room.area}}</h6>
@@ -29,7 +32,7 @@
             </div>
         </div>
     </div>
-    <div class="r-form">
+    <!-- <div class="r-form">
         <form action="" class="book-form">
             <h3>Make a reservation for the best price</h3>
             <div class="r-all">
@@ -107,5 +110,5 @@
                 <button>Book</button>
             </div>
         </form>
-    </div>
+    </div> -->
 </div>

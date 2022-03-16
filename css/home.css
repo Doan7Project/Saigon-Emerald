@@ -375,6 +375,7 @@
                 }
                 .content-room ul li a {
                     font-size: 2vmin;
+                    padding: 3px 10px;
                 }
             }
             /* @media all and (min-width:1280px) {

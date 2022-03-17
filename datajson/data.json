@@ -15,7 +15,7 @@
             "bed": "Double or Tween"
         },
         {
-            "id": "A01",
+            "id": "A02",
             "image": "../Image/broom1.jpg",
             "smallpic1": "../Image/superior/sppic1.jpg",
             "smallpic2": "../Image/superior/sppic2.jpg",
@@ -30,7 +30,7 @@
             "bed": "Double or Tween"
         },
         {
-            "id": "A01",
+            "id": "A03",
             "image": "../Image/broom1.jpg",
             "name": "Deluxe Garden View",
             "qty": 15,
@@ -42,7 +42,7 @@
             "bed": "Double or Tween"
         },
         {
-            "id": "A01",
+            "id": "A04",
             "image": "../Image/broom1.jpg",
             "name": "Deluxe Ocean View",
             "qty": 15,
@@ -54,7 +54,7 @@
             "bed": "Double or Tween"
         },
         {
-            "id": "A01",
+            "id": "A05",
             "image": "../Image/broom1.jpg",
             "name": "Bungalow Garden View",
             "qty": 15,
@@ -66,7 +66,7 @@
             "bed": "Double or Tween"
         },
         {
-            "id": "A01",
+            "id": "A06",
             "image": "../Image/broom1.jpg",
             "name": "Bungalow Ocean View",
             "qty": 15,

@@ -8,16 +8,12 @@
     </div>
     <div class="r-content">
         <h5>MAKE YOUR PERFECT ACCOMODATION</h5>
-        <div id="myModal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="img01">
-            <div id="caption"></div>
-        </div>
+
     </div>
     <div class="r-room">
         <div class="r-rooms" ng-repeat="room in items">
-            <div class="r-img">
-                <img src="{{room.image}}" onclick="showpic()" id="myImg" alt="">
+            <div class="r-img" id="{{room.id}}" ng-click="view(room.id)">
+                <img src="{{room.image}}" alt="">
                 <div class="r-small-pic">
                     <div>
                         <img src="{{room.smallpic1}}" class="small-img" alt="">
@@ -130,4 +126,32 @@
             </div>
         </form>
     </div> -->
+    <!-- picture 1 -->
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <!-- detail product  -->
+                    <section class="container Sproduct my-4 pt-2">
+                        <div class="row ">
+                            <div class="product-show  col-md-12 col-12">
+                                <img class="img-fluid w-100 pt-1" src="{{image}}" alt="">
+                                <img class="img-fluid w-100 pt-1" src="{{smallpic1}}" alt="">
+                                <img class="img-fluid w-100 pt-1" src="{{smallpic2}}" alt="">
+                                <img class="img-fluid w-100 pt-1" src="{{smallpic3}}" alt="">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>

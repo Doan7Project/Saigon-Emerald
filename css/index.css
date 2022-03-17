@@ -4,10 +4,6 @@
         padding: 0;
     }
     
-    body {
-        transition: 2s;
-    }
-    
     @font-face {
         font-family: myFirstFont;
         src: url(sansation_bold.woff);

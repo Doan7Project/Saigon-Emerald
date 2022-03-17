@@ -99,6 +99,19 @@ app.run(function($rootScope, $http) {
 })
 
 app.controller("roomCtr", function($scope, $rootScope) {
+    $scope.view = function(id) {
+
+        // alert(ID);
+        let phone = $scope.items.find(el => el.id == id);
+
+        $scope.image = phone.image;
+        $scope.smallpic1 = phone.smallpic1;
+
+        $scope.smallpic3 = phone.smallpic3;
+
+        $('#myModal').modal('show');
+    }
+
 
 
 });
@@ -169,10 +182,3 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 
 }
-
-// change picture
-
-// Get the modal
-
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption

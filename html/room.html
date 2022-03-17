@@ -8,11 +8,28 @@
     </div>
     <div class="r-content">
         <h5>MAKE YOUR PERFECT ACCOMODATION</h5>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
     </div>
     <div class="r-room">
         <div class="r-rooms" ng-repeat="room in items">
             <div class="r-img">
-                <img src="{{room.image}}" alt="">
+                <img src="{{room.image}}" onclick="showpic()" id="myImg" alt="">
+                <div class="r-small-pic">
+                    <div>
+                        <img src="{{room.smallpic1}}" class="small-img" alt="">
+                    </div>
+                    <div>
+                        <img src="{{room.smallpic2}}" class="small-img" alt="">
+                    </div>
+                    <div>
+                        <img src="{{room.smallpic3}}" class="small-img" alt="">
+                    </div>
+                </div>
+
             </div>
             <div class="r-info">
                 <div>
@@ -31,7 +48,9 @@
                 </div>
             </div>
         </div>
+
     </div>
+
     <!-- <div class="r-form">
         <form action="" class="book-form">
             <h3>Make a reservation for the best price</h3>

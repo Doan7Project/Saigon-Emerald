@@ -169,3 +169,10 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 
 }
+
+// change picture
+
+// Get the modal
+
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption

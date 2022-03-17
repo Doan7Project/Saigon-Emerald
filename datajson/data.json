@@ -1,7 +1,10 @@
 {
     "rooms": [{
             "id": "A01",
-            "image": "../Image/broom1.jpg",
+            "image": "../Image/superior/sppic2.jpg",
+            "smallpic1": "../Image/superior/sppic1.jpg",
+            "smallpic2": "../Image/superior/sppic2.jpg",
+            "smallpic3": "../Image/superior/sppic3.jpg",
             "name": "Superior Garden View",
             "qty": 15,
             "area": "25m2",
@@ -14,6 +17,9 @@
         {
             "id": "A01",
             "image": "../Image/broom1.jpg",
+            "smallpic1": "../Image/superior/sppic1.jpg",
+            "smallpic2": "../Image/superior/sppic2.jpg",
+            "smallpic3": "../Image/superior/sppic3.jpg",
             "name": "Superior Pool View",
             "qty": 15,
             "area": "25m2",

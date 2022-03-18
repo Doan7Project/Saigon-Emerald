@@ -182,17 +182,40 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 
 }
+var rootElement = document.documentElement;
+
+function topFunction() {
+
+    rootElement.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+}
+
 
 // show modal booking form
 
 
 function showform() {
+    rootElement.scrollTo({
+        top: 4200,
+        behavior: "smooth"
+    });
     document.getElementById('modal-form').style.display = "block";
+
+
 }
 
 function closes() {
+
+
+
     document.getElementById('modal-form').style.display = "none";
+
 }
+
+
 
 
 // window.onclick = function(event) {

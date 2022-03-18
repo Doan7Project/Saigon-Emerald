@@ -40,50 +40,52 @@
                         <H6><i class="fal fa-check"></i>Bathroom: {{room.bath}}</H6>
                         <h6><i class="fal fa-check"></i>Bed Type: {{room.bed}}</h6>
                     </div>
-                    <input type="button" value="Book Now">
+                    <input type="button" value="Book Now" onclick="showform()">
                 </div>
             </div>
         </div>
 
     </div>
+    <!-- form đăng ký phòng -->
+    <div id="modal-form" class="r-form">
 
-    <!-- <div class="r-form">
-        <form action="" class="book-form">
+        <form action="" class="book-form" onsubmit="return bookform()" onchange=" return funcaccom()">
+            <span onclick="closes()" class="close">&times;</span>
             <h3>Make a reservation for the best price</h3>
             <div class="r-all">
                 <h6 for="">Accomodation <span style="color: rgb(250, 57, 57);">*</span></h6>
-                <select name="" id="" class="r-accommodation">
+                <select name="" id="accomM" class="r-accommodation">
                     <option value="">Select your accomodation</option>
-                    <option value="">Superior Garden View</option>
-                    <option value="">Superior Pool View</option>
-                    <option value="">Deluxe Garden View</option>
-                    <option value="">Deluxe Ocean View</option>
-                    <option value="">Bungalow Garden View</option>
-                    <option value="">Bungalow Ocean View</option>
+                    <option value="1">Superior Garden View</option>
+                    <option value="2">Superior Pool View</option>
+                    <option value="3">Deluxe Garden View</option>
+                    <option value="4">Deluxe Ocean View</option>
+                    <option value="5">Bungalow Garden View</option>
+                    <option value="6">Bungalow Ocean View</option>
                 </select>
-                <div class="r-alart">
+                <div id="r-alart-1">
                     <h6>This field is required</h6>
                 </div>
             </div>
             <div class="r-person-info">
                 <div class="r-all-info">
                     <h6>Check in <span style="color: rgb(250, 57, 57);">*</span></h6>
-                    <input type="date">
-                    <div class="r-alart">
+                    <input type="date" id="arriVal">
+                    <div id="r-alart-2">
                         <h6>This field is required</h6>
                     </div>
                 </div>
                 <div class="r-all-info">
                     <h6>Check out <span style="color: rgb(250, 57, 57);">*</span></h6>
                     <input type="date">
-                    <div class="r-alart">
+                    <div id="r-alart-3">
                         <h6>This field is required</h6>
                     </div>
                 </div>
                 <div class="r-all-info">
                     <h6>Adults <span style="color: rgb(250, 57, 57);">*</span></h6>
                     <input type="text">
-                    <div class="r-alart">
+                    <div id="r-alart-4">
                         <h6>This field is required</h6>
                     </div>
                 </div>
@@ -98,21 +100,21 @@
                 <div class="r-all-info">
                     <h6>Your Name <span style="color: rgb(250, 57, 57);">*</span></h6>
                     <input type="text">
-                    <div class="r-alart">
+                    <div id="r-alart-5">
                         <h6>This field is required</h6>
                     </div>
                 </div>
                 <div class="r-all-info">
                     <h6>Phone <span style="color: rgb(250, 57, 57);">*</span></h6>
                     <input type="phone">
-                    <div class="r-alart">
+                    <div id="r-alart-6">
                         <h6>This field is required</h6>
                     </div>
                 </div>
                 <div class="r-all-info">
                     <h6>Email <span style="color: rgb(250, 57, 57);">*</span></h6>
                     <input type="text">
-                    <div class="r-alart">
+                    <div id="r-alart-7">
                         <h6>This field is required</h6>
                     </div>
                 </div>
@@ -125,7 +127,9 @@
                 <button>Book</button>
             </div>
         </form>
-    </div> -->
+    </div>
+
+    <!-- xuất file hình anh từ data json -->
     <!-- picture 1 -->
 
     <div class="modal fade" id="myModal" role="dialog">

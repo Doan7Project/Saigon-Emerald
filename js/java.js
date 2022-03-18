@@ -106,7 +106,7 @@ app.controller("roomCtr", function($scope, $rootScope) {
 
         $scope.image = phone.image;
         $scope.smallpic1 = phone.smallpic1;
-
+        $scope.smallpic2 = phone.smallpic2;
         $scope.smallpic3 = phone.smallpic3;
 
         $('#myModal').modal('show');
@@ -180,5 +180,71 @@ function topFunction() {
 
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+
+}
+
+// show modal booking form
+
+
+function showform() {
+    document.getElementById('modal-form').style.display = "block";
+}
+
+function closes() {
+    document.getElementById('modal-form').style.display = "none";
+}
+
+
+// window.onclick = function(event) {
+//     if (event.target == document.getElementById('modal-form')) {
+//         document.getElementById('modal-form').style.display = "none";
+//     }
+// }
+
+function bookform() {
+    var alForm1 = document.getElementById('r-alart-1');
+    var alForm2 = document.getElementById('r-alart-2');
+    var alForm3 = document.getElementById('r-alart-3');
+    var alForm4 = document.getElementById('r-alart-4');
+    var alForm5 = document.getElementById('r-alart-5');
+    var alForm6 = document.getElementById('r-alart-6');
+    var alForm7 = document.getElementById('r-alart-7');
+    var txtacc = document.getElementById('accomM');
+    var txtarr = document.getElementById('arriVal');
+    if (txtacc.value == "") {
+        txtacc.focus();
+        alForm1.style.display = "block";
+    } else if (txtarr.value == "") {
+        txtarr.focus();
+        alForm2.style.display = "block";
+    }
+
+
+}
+
+function funcaccom() {
+    var alForm1 = document.getElementById('r-alart-1');
+    var alForm2 = document.getElementById('r-alart-2');
+    var alForm3 = document.getElementById('r-alart-3');
+    var alForm4 = document.getElementById('r-alart-4');
+    var alForm5 = document.getElementById('r-alart-5');
+    var alForm6 = document.getElementById('r-alart-6');
+    var alForm7 = document.getElementById('r-alart-7');
+    var txtacc = document.getElementById('accomM');
+    var txtarr = document.getElementById('arriVal');
+
+    if (txtacc.value == "") {
+        txtacc.focus();
+        alForm1.style.display = "block";
+    } else if (txtacc.value != "") {
+        alForm1.style.display = "none";
+    }
+
+    if (txtarr.value == "") {
+        alForm2.style.display = "block";
+    } else if (txtarr.value != "") {
+        alForm2.style.display = "none";
+    }
+
 
 }

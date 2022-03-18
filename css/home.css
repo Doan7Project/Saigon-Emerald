@@ -163,8 +163,7 @@
             }
             
             .nav-body .n-content {
-                font-size: 2vw;
-                font-size: 6vmin;
+                font-size: 2.5vw;
             }
             
             .content-introduct-t {
@@ -175,8 +174,7 @@
             }
             
             .content-introduct-t h4 {
-                font-size: 2vw;
-                font-size: 4vmin;
+                font-size: 2.5vw;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             }
             
@@ -234,6 +232,7 @@
             } */
             
             .t-content h4 {
+                font-size: 3vmin;
                 color: rgb(240, 158, 50);
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             }

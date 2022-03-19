@@ -37,11 +37,21 @@
 }
 
 .r-content {
-    margin: 20px;
+    /* width: 90%; */
+    /* margin: 20px auto; */
     text-align: center;
-    padding: 20px;
-    color: rgb(255, 165, 46);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    /* border: 1px solid gray; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+}
+
+.r-content h5 {
+    padding: 30px;
+    font-size: 2vw;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.2);
+    /* transform: translate(-50%); */
 }
 
 .r-rooms {
@@ -113,10 +123,9 @@
 .r-form {
     transition: all ease 0.4s;
     margin: auto;
-    height: 100%;
+    height: auto;
     background-image: linear-gradient(to right, rgba(17, 173, 140, 0.7), rgba(228, 228, 51, 0.5));
     position: relative;
-    display: block;
     z-index: 1;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -143,7 +152,7 @@
     /* left: 50%; */
     width: 70%;
     margin: auto;
-    height: 100%;
+    height: auto;
     /* top: 15%; */
     padding: 50px;
     align-items: center;
@@ -181,6 +190,10 @@
 
 .r-person-info .r-all-info {
     padding: 10px;
+}
+
+.r-all-info input {
+    width: 100%;
 }
 
 .r-person-info div input {
@@ -388,10 +401,6 @@
     .r-img img {
         width: 100%;
     }
-    .r-form {
-        margin: auto;
-        height: 170vh;
-    }
     .book-form {
         width: 500px;
     }
@@ -425,10 +434,6 @@
 @media only screen and (max-width: 415px) {
     .book-form {
         width: 300px;
-    }
-    .r-form {
-        margin: auto;
-        height: 170vh;
     }
     .r-all textarea {
         width: 100%;
@@ -472,10 +477,6 @@
 }
 
 @media only screen and (max-width: 375px) {
-    .r-form {
-        margin: auto;
-        height: 210vh;
-    }
     .book-form h3 {
         font-size: 16px;
         text-align: center;

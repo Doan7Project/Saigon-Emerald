@@ -188,7 +188,8 @@ function topFunction() {
 
     rootElement.scrollTo({
         top: 0,
-        behavior: "smooth"
+        behavior: "smooth",
+
     });
 
 }
@@ -198,31 +199,18 @@ function topFunction() {
 
 
 function showform() {
-    rootElement.scrollTo({
-        top: 4200,
-        behavior: "smooth"
-    });
-    document.getElementById('modal-form').style.display = "block";
 
+    document.getElementById('modal-form').style.display = "block";
+    const element = document.getElementById("modal-form");
+    element.scrollIntoView();
 
 }
 
 function closes() {
-
-
-
     document.getElementById('modal-form').style.display = "none";
-
 }
 
 
-
-
-// window.onclick = function(event) {
-//     if (event.target == document.getElementById('modal-form')) {
-//         document.getElementById('modal-form').style.display = "none";
-//     }
-// }
 
 function bookform() {
     var alForm1 = document.getElementById('r-alart-1');

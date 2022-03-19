@@ -237,37 +237,37 @@ function bookform() {
     if (txtacc.value == "") {
         txtacc.focus();
         alForm1.style.display = "block";
-    } else if (txtarr.value == "") {
-        txtarr.focus();
-        alForm2.style.display = "block";
-    }
-
-
-}
-
-function funcaccom() {
-    var alForm1 = document.getElementById('r-alart-1');
-    var alForm2 = document.getElementById('r-alart-2');
-    var alForm3 = document.getElementById('r-alart-3');
-    var alForm4 = document.getElementById('r-alart-4');
-    var alForm5 = document.getElementById('r-alart-5');
-    var alForm6 = document.getElementById('r-alart-6');
-    var alForm7 = document.getElementById('r-alart-7');
-    var txtacc = document.getElementById('accomM');
-    var txtarr = document.getElementById('arriVal');
-
-    if (txtacc.value == "") {
-        txtacc.focus();
-        alForm1.style.display = "block";
-    } else if (txtacc.value != "") {
+    } else {
         alForm1.style.display = "none";
     }
 
-    if (txtarr.value == "") {
-        alForm2.style.display = "block";
-    } else if (txtarr.value != "") {
-        alForm2.style.display = "none";
-    }
 
 
 }
+
+// function funcaccom() {
+//     var alForm1 = document.getElementById('r-alart-1');
+//     var alForm2 = document.getElementById('r-alart-2');
+//     var alForm3 = document.getElementById('r-alart-3');
+//     var alForm4 = document.getElementById('r-alart-4');
+//     var alForm5 = document.getElementById('r-alart-5');
+//     var alForm6 = document.getElementById('r-alart-6');
+//     var alForm7 = document.getElementById('r-alart-7');
+//     var txtacc = document.getElementById('accomM');
+//     var txtarr = document.getElementById('arriVal');
+
+//     if (txtacc.value == "") {
+//         txtacc.focus();
+//         alForm1.style.display = "block";
+//     } else if (txtacc.value != "") {
+//         alForm1.style.display = "none";
+//     }
+
+//     if (txtarr.value == "") {
+//         alForm2.style.display = "block";
+//     } else if (txtarr.value != "") {
+//         alForm2.style.display = "none";
+//     }
+
+
+// }

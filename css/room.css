@@ -194,6 +194,7 @@
 
 .r-all-info input {
     width: 100%;
+    content: "";
 }
 
 .r-person-info div input {
